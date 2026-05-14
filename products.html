@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YPC Store | Ürünler</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+   <a href="index.html" class="logo">
+  <img src="images/logo.png" alt="YPC Store Logo">
+</a>
+    <ul class="menu">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="products.html">Ürünler</a></li>
+      <li><a href="about.html">Hakkımızda</a></li>
+      <li><a href="contact.html">İletişim</a></li>
+    </ul>
+
+    <a href="cart.html" class="cart-btn">🛒 Sepet <span id="cartCount">0</span></a>
+  </nav>
+
+  <section class="page-header">
+    <h1>Ürünler</h1>
+    <p>Premium deri ürün koleksiyonumuzu keşfet.</p>
+  </section>
+
+  <section class="section">
+    <div class="products">
+
+      <div class="product-card">
+        <div class="product-image">👛</div>
+        <span class="badge">Çok Satan</span>
+        <h3>Premium Deri Cüzdan</h3>
+        <p>Minimal, şık ve günlük kullanım için ideal.</p>
+        <h4>899 TL</h4>
+        <button onclick="addToCart('Premium Deri Cüzdan', 899)">Sepete Ekle</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">💳</div>
+        <span class="badge">Yeni</span>
+        <h3>Deri Kartlık</h3>
+        <p>İnce tasarım, pratik kullanım, premium görünüm.</p>
+        <h4>499 TL</h4>
+        <button onclick="addToCart('Deri Kartlık', 499)">Sepete Ekle</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">👜</div>
+        <span class="badge">Premium</span>
+        <h3>Deri Omuz Çantası</h3>
+        <p>Modern şehir stiline güçlü bir dokunuş.</p>
+        <h4>2499 TL</h4>
+        <button onclick="addToCart('Deri Omuz Çantası', 2499)">Sepete Ekle</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">⌚</div>
+        <span class="badge">Limited</span>
+        <h3>Deri Saat Kayışı</h3>
+        <p>Klasik detaylarla modern bir aksesuar.</p>
+        <h4>699 TL</h4>
+        <button onclick="addToCart('Deri Saat Kayışı', 699)">Sepete Ekle</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">🧥</div>
+        <span class="badge">Yeni Sezon</span>
+        <h3>Deri Ceket</h3>
+        <p>Güçlü, modern ve premium görünüm.</p>
+        <h4>5499 TL</h4>
+        <button onclick="addToCart('Deri Ceket', 5499)">Sepete Ekle</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">🧳</div>
+        <span class="badge">Seyahat</span>
+        <h3>Deri Seyahat Çantası</h3>
+        <p>Şık seyahatler için dayanıklı tasarım.</p>
+        <h4>3999 TL</h4>
+        <button onclick="addToCart('Deri Seyahat Çantası', 3999)">Sepete Ekle</button>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 YPC Store. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

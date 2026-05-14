@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YPC Store | Sepet</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+  <img src="images/logo.png" alt="YPC Store Logo">
+</a>
+
+    <ul class="menu">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="products.html">Ürünler</a></li>
+      <li><a href="about.html">Hakkımızda</a></li>
+      <li><a href="contact.html">İletişim</a></li>
+    </ul>
+
+    <a href="cart.html" class="cart-btn">🛒 Sepet <span id="cartCount">0</span></a>
+  </nav>
+
+  <section class="page-header">
+    <h1>Sepet ve Ödeme</h1>
+    <p>Siparişini kontrol et ve ödeme yöntemini seç.</p>
+  </section>
+
+  <section class="section cart-page">
+    <div class="cart-list">
+      <h2>Sepetim</h2>
+      <div id="cartItems"></div>
+
+      <div class="total-box">
+        <h3>Toplam: <span id="cartTotal">0</span> TL</h3>
+        <button onclick="clearCart()">Sepeti Temizle</button>
+      </div>
+    </div>
+
+    <div class="checkout-box">
+      <h2>Ödeme Bilgileri</h2>
+
+      <input type="text" placeholder="Ad Soyad" />
+      <input type="text" placeholder="Telefon" />
+      <input type="text" placeholder="Adres" />
+
+      <select>
+        <option>Kredi / Banka Kartı</option>
+        <option>Kapıda Ödeme</option>
+        <option>Havale / EFT</option>
+      </select>
+
+      <input type="text" placeholder="Kart Numarası (demo)" />
+      <input type="text" placeholder="Son Kullanma Tarihi (demo)" />
+      <input type="text" placeholder="CVV (demo)" />
+
+      <button onclick="completeOrder()">Siparişi Tamamla</button>
+
+      <p class="demo-note">
+        Bu ödeme ekranı demo amaçlıdır. Gerçek ödeme için iyzico, PayTR veya Stripe bağlanabilir.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 YPC Store. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

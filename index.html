@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YPC Store | Ana Sayfa</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+  <img src="images/logo.png" alt="YPC Store Logo">
+</a>
+
+    <ul class="menu">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="products.html">Ürünler</a></li>
+      <li><a href="about.html">Hakkımızda</a></li>
+      <li><a href="contact.html">İletişim</a></li>
+    </ul>
+
+    <a href="cart.html" class="cart-btn">🛒 Sepet <span id="cartCount">0</span></a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-text">
+      <p class="small-title">PREMIUM LEATHER COLLECTION</p>
+      <h1>Tarzını Kaliteli Deriyle Tamamla</h1>
+      <p>
+        YPC Store, modern tasarım ve premium deri hissini bir araya getirir.
+        Şık, dayanıklı ve zamansız deri ürünleri keşfet.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="products.html" class="primary-btn">Alışverişe Başla</a>
+        <a href="about.html" class="secondary-btn">Markayı Keşfet</a>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <span>%20 İndirim</span>
+      <h3>Yeni Sezon Deri Koleksiyonu</h3>
+      <p>Premium kalite, modern tasarım, güçlü stil.</p>
+    </div>
+  </section>
+
+  <section class="features">
+    <div>
+      <h3>Ücretsiz Kargo</h3>
+      <p>Belirli tutar üzeri siparişlerde hızlı teslimat.</p>
+    </div>
+
+    <div>
+      <h3>Güvenli Ödeme</h3>
+      <p>Kart, havale ve kapıda ödeme seçenekleri.</p>
+    </div>
+
+    <div>
+      <h3>Premium Kalite</h3>
+      <p>Şık, dayanıklı ve uzun ömürlü ürünler.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Öne Çıkan Koleksiyon</h2>
+
+    <div class="products">
+      <div class="product-card">
+        <div class="product-image">👛</div>
+        <span class="badge">Çok Satan</span>
+        <h3>Premium Deri Cüzdan</h3>
+        <p>Minimal ve şık tasarım.</p>
+        <h4>899 TL</h4>
+        <button onclick="addToCart('Premium Deri Cüzdan', 899)">Sepete Ekle</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">💳</div>
+        <span class="badge">Yeni</span>
+        <h3>Deri Kartlık</h3>
+        <p>İnce, pratik ve modern.</p>
+        <h4>499 TL</h4>
+        <button onclick="addToCart('Deri Kartlık', 499)">Sepete Ekle</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">👜</div>
+        <span class="badge">Premium</span>
+        <h3>Deri Omuz Çantası</h3>
+        <p>Şehir stiline premium dokunuş.</p>
+        <h4>2499 TL</h4>
+        <button onclick="addToCart('Deri Omuz Çantası', 2499)">Sepete Ekle</button>
+      </div>
+    </div>
+
+    <div class="center">
+      <a href="products.html" class="primary-btn">Tüm Ürünleri Gör</a>
+    </div>
+  </section>
+
+  <footer>
+  <img src="images/logo.png" class="footer-logo" alt="YPC Store Logo">
+
+  <p>© 2026 YPC Store. Tüm hakları saklıdır.</p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
