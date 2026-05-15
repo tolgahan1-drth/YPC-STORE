@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YPC Store | Kayıt Ol</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/logo.png">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="YPC Store Logo">
+    </a>
+
+    <ul class="menu">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="products.html">Ürünler</a></li>
+      <li><a href="about.html">Hakkımızda</a></li>
+      <li><a href="contact.html">İletişim</a></li>
+      <li><a href="profile.html">Profil</a></li>
+    </ul>
+
+    <a href="cart.html" class="cart-btn">🛒 Sepet <span id="cartCount">0</span></a>
+  </nav>
+
+  <section class="auth-page">
+    <div class="auth-box">
+      <h1>Kayıt Ol</h1>
+      <p>YPC Store hesabını oluştur.</p>
+
+      <input type="text" id="registerName" placeholder="Ad Soyad" />
+      <input type="email" id="registerEmail" placeholder="E-posta" />
+      <input type="password" id="registerPassword" placeholder="Şifre" />
+
+      <button onclick="registerUser()">Kayıt Ol</button>
+
+      <p class="auth-link">
+        Zaten hesabın var mı? <a href="login.html">Giriş yap</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 YPC Store. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

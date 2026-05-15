@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YPC Store | Profilim</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/logo.png">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="YPC Store Logo">
+    </a>
+
+    <ul class="menu">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="products.html">Ürünler</a></li>
+      <li><a href="about.html">Hakkımızda</a></li>
+      <li><a href="contact.html">İletişim</a></li>
+      <li><a href="profile.html">Profil</a></li>
+    </ul>
+
+    <a href="cart.html" class="cart-btn">🛒 Sepet <span id="cartCount">0</span></a>
+  </nav>
+
+  <section class="page-header">
+    <h1>Profilim</h1>
+    <p>Hesap bilgilerini ve sipariş geçmişini görüntüle.</p>
+  </section>
+
+  <section class="section profile-page">
+    <div class="profile-card-box">
+      <div class="profile-avatar">YPC</div>
+
+      <h2 id="profileName">Misafir Kullanıcı</h2>
+      <p id="profileEmail">Giriş yapılmadı.</p>
+
+      <div class="profile-actions">
+        <a href="login.html" id="loginProfileBtn">Giriş Yap</a>
+        <a href="register.html" id="registerProfileBtn">Kayıt Ol</a>
+        <button onclick="logoutUser()" id="logoutBtn">Çıkış Yap</button>
+      </div>
+    </div>
+
+    <div class="orders-box">
+      <h2>Sipariş Geçmişi</h2>
+
+      <div class="order-item">
+        <h3>Henüz gerçek sipariş yok</h3>
+        <p>Gerçek ödeme sistemi bağlandığında siparişlerin burada görünecek.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 YPC Store. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
